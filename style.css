@@ -504,7 +504,7 @@ header
         height: 30px;
         position: fixed;
         top: 40px;
-        right: 60px;
+        right: 10%;
         transition: all 0.5s;
         cursor: pointer;
         z-index: 20;
@@ -557,7 +557,8 @@ header
     }
 
     .site-name {
-        font-size: 2.1rem;
+        font-size: 1.9rem;
+        letter-spacing: 0.1rem;
     }
 
     .typed {
