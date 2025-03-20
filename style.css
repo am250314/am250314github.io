@@ -29,7 +29,7 @@ header
 .header {
     max-width: 100%;
     height: 90vh;
-    background-image: url("https://raw.githubusercontent.com/am250314/am250314github.io/refs/heads/main/mainvisual_pc.jpeg");
+    background-image: url(../img/mainvisual_pc.jpeg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,6 +51,11 @@ header
     border-top-right-radius: 55% 120px; /* 右側の曲線 */
 }
 
+/* .logo {
+    height: 10px;
+    width: 140px;
+} */
+
 .navi-ul {
     display: flex;
     justify-content: flex-end;
@@ -69,6 +74,16 @@ header
 .navi-list:hover {
     /* opacity: 0.6; */
     color: #3E4550;
+}
+
+/* ハンバーガーメニュー時のみ表示するTOPボタンのスタイル */
+.menu-only {
+    display: none; /* 通常のナビゲーション時は非表示 */
+}
+
+/* ハンバーガーメニューが開いた時に表示 */
+.header.open .menu-only {
+    display: block;
 }
 
 .site-title {
@@ -466,7 +481,8 @@ header
 ------------------ */
 
     .header {
-    background-image: url("https://raw.githubusercontent.com/am250314/am250314github.io/refs/heads/main/mainvisual_sp.jpeg");
+    background-image: url(../img/mainvisual_sp.jpeg);
+    /* padding: 30px 40px 80px; */
     }
 
     .navi {
@@ -504,7 +520,7 @@ header
         height: 30px;
         position: fixed;
         top: 40px;
-        right: 10%;
+        right: 60px;
         transition: all 0.5s;
         cursor: pointer;
         z-index: 20;
@@ -557,8 +573,7 @@ header
     }
 
     .site-name {
-        font-size: 1.9rem;
-        letter-spacing: 0.1rem;
+        font-size: 2.1rem;
     }
 
     .typed {
@@ -742,6 +757,11 @@ sp -375px-
 
 
 @media screen and (max-width: 375px) {
+    
+    /* .header {
+        padding: 20px 20px 80px;
+    } */
+
     .site-title {
         top: 60%;
     }

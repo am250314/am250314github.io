@@ -53,7 +53,12 @@ header
 ------------------ */
 
 .header {
-    padding: 40px 120px 80px 120px;
+    padding: 40px 120px 140px 120px;
+}
+
+.logo {
+    height: 32px;
+    width: 140px;
 }
 
 .navi-ul {
@@ -73,6 +78,15 @@ header
     opacity: 0.6;
 }
 
+/* ハンバーガーメニュー時のみ表示するTOPボタンのスタイル */
+.menu-only {
+    display: none; /* 通常のナビゲーション時は非表示 */
+}
+
+/* ハンバーガーメニューが開いた時に表示 */
+.header.open .menu-only {
+    display: block;
+}
 
 
 /* ------------------
@@ -209,7 +223,7 @@ footer
 
 
 /* -------------------------------------------
-sp
+sp  (768px)
 ------------------------------------------- */
 
 @media screen and (max-width:768px) {
@@ -225,6 +239,13 @@ sp
 header
 ------------------ */
 
+    .header {
+        padding: 20px 120px 80px 60px;
+    }
+
+    .logo {
+        height: 40px;
+    }
 
     .navi {
         position: fixed;
@@ -353,4 +374,9 @@ sp -375px-
     .toggle_btn {
         right: 16px;
     }
+
+    .header {
+        padding: 20px 120px 80px 30px;
+    }
+
 }
