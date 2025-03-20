@@ -15,7 +15,6 @@ img {
 
 .wrapper {
     max-width: 1000px;
-    /* padding: 0 40px; */
     margin: 0 auto;
     text-align: center;
 }
@@ -229,7 +228,7 @@ works
     text-align: center;
     vertical-align: middle;
     font-size: 0.9rem;
-    font-family: 'Noto Sans JP', san-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .works-item-text-site {
@@ -451,19 +450,11 @@ sp -768px-
 ------------------------------------------- */
 
 @media screen and (max-width:768px) {
-
-
     .site-title {
         top: 70%;
         left: 6%;
         line-height: 1.3;
     }
-
-
-
-/* ------------------
-header
------------------- */
 
     .header {
     background-image: url("https://raw.githubusercontent.com/am250314/am250314github.io/refs/heads/main/mainvisual_sp.jpeg");
@@ -576,13 +567,6 @@ header
         font-size: 1.4rem;
     }
 
-
-
-
-/* ------------------
-about
------------------- */
-
     #about {
         padding-bottom: 128px;
     }
@@ -613,15 +597,6 @@ about
         padding-top: 30px;
     }
 
-
-
-
-
-/* ------------------
-works
------------------- */
-
-
     .slider {
         padding: 60px 40px 0 40px;
     }
@@ -643,22 +618,14 @@ works
         margin: 0 8px 2px 0;
     }
 
-
-
-
-/* ------------------
-service
------------------- */
-
-
     .service-list {
         padding-top: 60px;
     }
 
     .service {
         flex-direction: column;
-        align-items: center; /* 追加 */
-        text-align: center; /* 追加 */
+        align-items: center;
+        text-align: center;
         width: 100%;
         margin: 0 auto;
     }
@@ -670,7 +637,6 @@ service
 
     .service-body {
         width: 70%;
-        /* margin: 0 10%; */
         padding: 4%;
     }
 
@@ -695,14 +661,6 @@ service
     #service {
         padding-bottom: 128px;
     }
-
-
-
-
-/* ------------------
-contact
------------------- */
-
 
     .contact-content {
         border-top-left-radius: 55% 120px;
@@ -730,24 +688,9 @@ contact
     }
 }
 
-
-
-
-
-
-
-/* -------------------------------------------
-sp -375px-
-------------------------------------------- */
-
-
 @media screen and (max-width: 375px) {
     .site-title {
         top: 60%;
-    }
-
-    .toggle_btn {
-        right: 40px;
     }
 
     .header {
@@ -759,16 +702,13 @@ sp -375px-
         width: 94%;
     }
 
+    .contact-mail {
+        padding-left: 8%;
+    }
+
     .img-cicle01 {
         top: 30%;
     }
-
-    .contact-btn {
-        padding: 2rem 3rem;
-        z-index: 40;
-    }
-
-    .contact-mail {
-        top: 55%;
-    }
 }
+
+
